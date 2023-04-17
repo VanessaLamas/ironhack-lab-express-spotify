@@ -1,0 +1,8 @@
+<h1>Artists results: </h1>
+<ul>
+    {{#each artist}}
+      <li>{{name}}</li>
+      <img src="{{this.images.[0].url}}" >   
+      <li><a href="/albums/{{id}}">Click here</a></li>
+    {{/each}}
+</ul>
